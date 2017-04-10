@@ -1,0 +1,28 @@
+[
+  {
+    "name": "unIT 2017",
+    "url": "unit-2017",
+    "type": "SUGGESTION",
+    "category": {
+      "name": "Other"
+    }
+  },
+  {
+    "name": "Ghost in the shell 2017",
+    "url": "ghost-in-the-shell-2017",
+    "type": "RATING",
+    "ratingText": "How do you like the movie?",
+    "category": {
+      "name": "Movies"
+    }
+  },
+  {
+    "name": "New coffee machine",
+    "url": "new-coffee-machine",
+    "type": "SUGGESTION",
+    "category": {
+      "name": "Offices"
+    },
+    "password": "123456"
+  }
+]
