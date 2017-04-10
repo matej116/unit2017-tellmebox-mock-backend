@@ -1,0 +1,43 @@
+{
+  "name": "unit2017-tellmebox-mock-backend",
+  "version": "1.0.0",
+  "description": "Mock backend for unIT 2017 student contest",
+  "main": "index.js",
+  "scripts": {
+    "eslint:html": "./node_modules/eslint/bin/eslint.js -c .eslintrc -f node_modules/eslint-html-reporter/reporter.js -o reports/eslint-report.html ./",
+    "test": "NODE_ENV=test node node_modules/mocha/bin/_mocha tests/ --recursive",
+    "test:coverage": "NODE_ENV=test ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha tests/ -- --recursive",
+    "test:watch": "NODE_ENV=test node node_modules/mocha/bin/_mocha tests/ --recursive --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cngroupdk/unit2017-tellmebox-mock-backend.git"
+  },
+  "keywords": [
+    "unit",
+    "2017",
+    "CN Group CZ"
+  ],
+  "author": "CN Group CZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cngroupdk/unit2017-tellmebox-mock-backend/issues"
+  },
+  "homepage": "https://github.com/cngroupdk/unit2017-tellmebox-mock-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "pm2": "^2.4.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.0",
+    "eslint-html-reporter": "^0.5.2",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0"
+  }
+}
