@@ -44,7 +44,9 @@ suggestionBoxEndpoint.register(app)
 suggestionItemEndpoint.register(app)
 
 app.use(express.static('../static'))
-
+app.get('*', function(request, response, next) {
+    response.sendfile('/../static/index.html', {root: '../static'});
+});
 
 
 const server = app.listen(appPort, () => {
