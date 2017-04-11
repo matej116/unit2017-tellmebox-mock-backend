@@ -1,5 +1,6 @@
 'use strict'
 
+const chai = require('chai')
 const expect = chai.expect
 
 
@@ -11,6 +12,7 @@ describe('SuggestionBoxStore', () => {
   let initPromise
 
   beforeEach(() => {
+    initPromise = SuggestionBoxStoreModule.init()
   })
 
   it('exists', () => {
