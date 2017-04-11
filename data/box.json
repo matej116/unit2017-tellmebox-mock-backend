@@ -1,28 +1,25 @@
 [
   {
+    "guid": "ABCD",
     "name": "unIT 2017",
     "url": "unit-2017",
     "type": "SUGGESTION",
-    "category": {
-      "name": "Other"
-    }
+    "category": "Other"
   },
   {
+    "guid": "DEFG",
     "name": "Ghost in the shell 2017",
     "url": "ghost-in-the-shell-2017",
     "type": "RATING",
     "ratingText": "How do you like the movie?",
-    "category": {
-      "name": "Movies"
-    }
+    "category": "Movies"
   },
   {
+    "guid": "HIJK",
     "name": "New coffee machine",
     "url": "new-coffee-machine",
     "type": "SUGGESTION",
-    "category": {
-      "name": "Offices"
-    },
+    "category": "Offices",
     "password": "123456"
   }
 ]

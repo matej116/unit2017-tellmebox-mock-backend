@@ -25,12 +25,12 @@ function SuggestionBoxStore() {
   }
 
   function remove(box) {
-    const newBoxes = _.filter(boxes, b => box.name !== b.name)
+    const newBoxes = _.filter(boxes, b => box.guid !== b.guid)
     boxes = newBoxes
   }
 
   function update(box) {
-    const updateBox = _.find(boxes, b => box.name === b.name)
+    const updateBox = _.find(boxes, b => box.guid === b.guid)
     if (updateBox) {
       remove(updateBox)
       add(box)

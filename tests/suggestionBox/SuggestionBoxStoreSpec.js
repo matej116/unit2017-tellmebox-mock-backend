@@ -63,7 +63,7 @@ describe('SuggestionBoxStore', () => {
     it('removes item from array', (done) => {
       initPromise
         .then(() => {
-          SuggestionBoxStoreModule.remove({name: 'unIT 2017'})
+          SuggestionBoxStoreModule.remove({guid: 'ABCD'})
           const boxes = SuggestionBoxStoreModule.list()
           expect(boxes).to.have.lengthOf(2)
           done()
@@ -81,7 +81,7 @@ describe('SuggestionBoxStore', () => {
     it('update item in array', (done) => {
       initPromise
         .then(() => {
-          SuggestionBoxStoreModule.update({name: 'unIT 2017', url: 'aaa-bbb-ccc'})
+          SuggestionBoxStoreModule.update({guid: 'ABCD', url: 'aaa-bbb-ccc'})
           const boxes = SuggestionBoxStoreModule.list()
           expect(boxes).to.have.lengthOf(3)
           expect(boxes[2].url).to.be.eql('aaa-bbb-ccc')
