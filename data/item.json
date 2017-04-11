@@ -1,0 +1,18 @@
+[
+  {
+    "guid": "GBNK",
+    "text": "Great coffee",
+    "starred": false,
+    "suggestionBox": "HIJK",
+    "dateTime": "2017-04-11T08:23:45+01",
+    "tags": ["coffee", "latte"]
+  },
+  {
+    "guid": "QWER",
+    "text": "Great lattee",
+    "starred": false,
+    "suggestionBox": "HIJK",
+    "dateTime": "2017-04-11T08:33:21+01",
+    "tags": ["latte"]
+  }
+]
