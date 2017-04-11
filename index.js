@@ -45,7 +45,7 @@ suggestionItemEndpoint.register(app)
 
 app.use(express.static('../static'))
 app.get('*', function(request, response, next) {
-    response.sendfile('/../static/index.html', {root: '../static'});
+    response.sendFile(__dirname + '/../static/index.html', {root: '/'});
 });
 
 
