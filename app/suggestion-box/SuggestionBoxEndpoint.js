@@ -7,7 +7,7 @@ const apiResponse = require('../common/ApiResponse.js')
 
 function SuggestionBoxEndpoint(SuggestionBoxStore) {
 
-  const ENDPOINT = '/suggestion-box'
+  const ENDPOINT = '/api/suggestion-box'
 
 
   function register(app) {

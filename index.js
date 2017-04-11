@@ -13,7 +13,7 @@ const suggestionBoxEndpointModule = require('./app/suggestion-box/SuggestionBoxE
 const suggestionItemEndpointModule = require('./app/suggestion-item/SuggestionItemEndpoint.js')
 
 
-const appPort = process.env.PORT || 8888
+const appPort = process.env.PORT || 80
 
 const app = express()
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -30,6 +30,8 @@ const suggestionItemEndpoint = suggestionItemEndpointModule(suggestionItemStore)
 categoryEndpoint.register(app)
 suggestionBoxEndpoint.register(app)
 suggestionItemEndpoint.register(app)
+
+app.use(express.static('../static'))
 
 const server = app.listen(appPort, () => {
   console.log('Web-app listening at port ' + appPort)

@@ -5,7 +5,7 @@ const apiResponse = require('../common/ApiResponse.js')
 
 function CategoryEndpoint(CategoryStore) {
 
-  const ENDPOINT = '/category'
+  const ENDPOINT = '/api/category'
 
 
   function register(app) {
